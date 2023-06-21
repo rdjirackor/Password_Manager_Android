@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.graphics.Typeface;
 import android.widget.Button;
 
-import java.util.Scanner;
+/*Courage, find out how the back button works*/
 
 
 public class MainActivity extends AppCompatActivity {
