@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Secure Pass</string>
+    <string name="whoMadeMe">\"This project was completed by Team 7\"</string>
+    <string name="CreateMasterPass">Create an Master Password!</string>
+    <string name="ConfirmPassword">Confirm Password</string>
+    <string name="Warning">This will be used to verify you, if you lose it, you will lose all your passwords!\n It is
+        literally not recoverable!
+    </string>
+</resources>
