@@ -1,6 +1,8 @@
 package com.example.groupseven;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.view.View;
 import android.widget.TextView;
@@ -36,13 +38,17 @@ public class MainActivity extends AppCompatActivity {
         createAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Get an instance of SharedPreferences
+                SharedPreferences preferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
 
-                //openCreateActivity();
-                openLoginActivity();
-                /*Courage i commented this openCreateActivity out because i want to check the login activity
-                 */
-
-            }
+                // Retrieve the password
+                String savedPassword = preferences.getString("password", "");
+                if (!savedPassword.equals("")) {
+                    openLoginActivity();
+                } else {
+                    openCreateActivity();
+                }
+                }
         });
     }
 

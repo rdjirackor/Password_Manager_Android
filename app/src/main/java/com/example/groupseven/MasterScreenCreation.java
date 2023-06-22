@@ -1,6 +1,7 @@
 package com.example.groupseven;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -34,11 +35,13 @@ public class MasterScreenCreation extends AppCompatActivity {
             public void onClick(View v) {
                 String editTex = editText.getText().toString();
                 String editTex1 = editText2.getText().toString();
-                if(!editTex.equals("")){
+                if (!editTex.equals("")) {
                     if (editTex.equals(editTex1)) {
-                        //SharedPreferences preferences =getSharedPreferences("MyPrefs",context)
-
-
+                        // Save the password using SharedPreferences
+                        SharedPreferences preferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = preferences.edit();
+                        editor.putString("password", editTex);
+                        editor.apply();
 
                         Toast.makeText(MasterScreenCreation.this, "Successful!", Toast.LENGTH_LONG).show();
                         openCreateAccount();
@@ -50,7 +53,9 @@ public class MasterScreenCreation extends AppCompatActivity {
                 } else {
                     Toast.makeText(MasterScreenCreation.this, "Enter a password, bruh!", Toast.LENGTH_LONG).show();
                 }
-            }});
+            }
+        });
+
     }
 
     public void openCreateAccount(){
