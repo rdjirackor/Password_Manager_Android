@@ -2,6 +2,7 @@ package com.example.groupseven;
 
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -10,10 +11,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-
-
-
-
 public class MasterScreenCreation extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +36,10 @@ public class MasterScreenCreation extends AppCompatActivity {
                 String editTex1 = editText2.getText().toString();
                 if(!editTex.equals("")){
                     if (editTex.equals(editTex1)) {
+                        //SharedPreferences preferences =getSharedPreferences("MyPrefs",context)
+
+
+
                         Toast.makeText(MasterScreenCreation.this, "Successful!", Toast.LENGTH_LONG).show();
                         openCreateAccount();
                     } else {

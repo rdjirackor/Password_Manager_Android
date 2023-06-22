@@ -6,4 +6,6 @@
     <string name="Warning">This will be used to verify you, if you lose it, you will lose all your passwords!\n It is
         literally not recoverable!
     </string>
+    <string name="Welcome">"Welcome, dude"</string>
+    <string name="EnterMaster">Enter Master Password</string>
 </resources>

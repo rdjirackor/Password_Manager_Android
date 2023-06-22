@@ -37,7 +37,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                openCreateActivity();
+                //openCreateActivity();
+                openLoginActivity();
+                /*Courage i commented this openCreateActivity out because i want to check the login activity
+                 */
 
             }
         });
@@ -46,7 +49,9 @@ public class MainActivity extends AppCompatActivity {
     public void openCreateActivity(){
         Intent intent = new Intent(this, MasterScreenCreation.class );
         startActivity(intent);
-
-
+    }
+    public void openLoginActivity(){
+        Intent intent1 =new Intent(this, LoginCreate.class);
+        startActivity(intent1);
     }
 }
