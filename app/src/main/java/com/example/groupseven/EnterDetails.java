@@ -42,7 +42,7 @@ public class EnterDetails extends AppCompatActivity {
                 String acc = Acc.getText().toString();
                 String username = Username.getText().toString();
 
-                SharedPreferences preferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+                SharedPreferences preferences = getSharedPreferences("MyPref", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = preferences.edit();
                 editor.putString("password", pass);
                 editor.putString("note",note);
@@ -52,11 +52,6 @@ public class EnterDetails extends AppCompatActivity {
                 editor.apply();
                 Toast.makeText(EnterDetails.this,"Saved!",Toast.LENGTH_LONG).show();
                 openCreateAccount();
-
-
-
-
-
             }
         });
 
