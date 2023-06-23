@@ -44,11 +44,23 @@ public class EnterDetails extends AppCompatActivity {
 
                 SharedPreferences preferences = getSharedPreferences("MyPref", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = preferences.edit();
-                editor.putString("password", pass);
-                editor.putString("note",note);
-                editor.putString("title",title);
-                editor.putString("acc",acc);
-                editor.putString("username",username);
+                int i =0;
+
+                if (title.isEmpty()) {
+                    editor.putString("title", title);
+                    i++;
+                } else {
+                    editor.putString("title", title);
+                    // I am so confused, GPT please help
+                }
+
+                if (pass.isEmpty()) {
+                    editor.putString("password" + (i + 1), "Default Password");
+                } else {
+                    editor.putString("password" + (i + 1), pass);
+                }
+
+
                 editor.apply();
                 Toast.makeText(EnterDetails.this,"Saved!",Toast.LENGTH_LONG).show();
                 openCreateAccount();
