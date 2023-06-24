@@ -50,6 +50,8 @@ public class CreateAccount extends AppCompatActivity {
                 openEnterDetActivity();
             }
         });
+        /* Over here is where the problem of displaying om the texrview is, so there is a textview array
+         and I wan it to move on to textview 2 if textview 1 is full and so on */
         TextView[] textViews = new TextView[] {
                 first, sec, thi, fou, five, six, seven, eig, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen
         };

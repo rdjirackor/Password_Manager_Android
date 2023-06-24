@@ -13,6 +13,13 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class EnterDetails extends AppCompatActivity {
+    /*So  we use sth ca;led SharedPreferences to save data
+    Onto the users phone, like how the login passwords atre save dnow.
+    I want to start by saving nly title and pass now, then i cn move on to save em all. The necxt comment
+    Is on the CreateAccount page
+
+
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +58,6 @@ public class EnterDetails extends AppCompatActivity {
                     i++;
                 } else {
                     editor.putString("title", title);
-                    // I am so confused, GPT please help
                 }
 
                 if (pass.isEmpty()) {
