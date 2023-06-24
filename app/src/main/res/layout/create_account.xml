@@ -5,222 +5,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/purple_200"
     tools:context=".CreateAccount">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toTopOf="@+id/cn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
         <LinearLayout
+            android:id="@+id/displayLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <!-- Place your TextView elements here -->
-
-
-        <TextView
-            android:id="@+id/display1"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:layout_marginTop="80dp"
-            android:background="@drawable/back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-        <TextView
-            android:id="@+id/display2"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:background="@drawable/back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-        <TextView
-            android:id="@+id/display3"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:background="@drawable/back"
-
-            android:text=""
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-        <TextView
-            android:id="@+id/display4"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:text=""
-            android:background="@drawable/back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-        <TextView
-            android:id="@+id/display5"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:background="@drawable/back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-        <TextView
-            android:id="@+id/display6"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:background="@drawable/back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-        <TextView
-            android:id="@+id/display7"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:background="@drawable/back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-        <TextView
-            android:id="@+id/display8"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:background="@drawable/back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-        <TextView
-            android:id="@+id/display9"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:background="@drawable/back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-        <TextView
-            android:id="@+id/display10"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:background="@drawable/back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-        <TextView
-            android:id="@+id/display11"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:background="@drawable/back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-        <TextView
-            android:id="@+id/display12"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:background="@drawable/back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-        <TextView
-            android:id="@+id/display13"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:background="@drawable/back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-        <TextView
-            android:id="@+id/display14"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:text=""
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-        <TextView
-            android:id="@+id/display15"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:text=""
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-        <TextView
-            android:id="@+id/display16"
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:text=""
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-        </LinearLayout>
-
+            android:orientation="vertical"
+            android:padding="16dp" />
     </ScrollView>
-
-
-
 
     <Button
         android:text="+"
         android:textSize="30dp"
         android:layout_width="70dp"
-        android:layout_height="70dp" android:id="@+id/cn"
+        android:layout_height="70dp"
+        android:id="@+id/cn"
         android:background="@drawable/button"
         android:layout_margin="10dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.903"
-        app:layout_constraintVertical_bias="0.936"/>
-
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintVertical_bias="0.936" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
