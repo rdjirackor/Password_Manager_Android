@@ -12,81 +12,53 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+// EnterDetails.java
+
 public class EnterDetails extends AppCompatActivity {
-    /*So  we use sth ca;led SharedPreferences to save data
-    Onto the users phone, like how the login passwords atre save dnow.
-    I want to start by saving nly title and pass now, then i cn move on to save em all. The necxt comment
-    Is on the CreateAccount page
+    // ...
 
-
-    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.enter_details);
         EditText Pass,Note,Title,Acc,Username;
-
+        String display="Added!";
+        Pass = findViewById(R.id.password);
         Username=findViewById(R.id.Username);
         Acc=findViewById(R.id.account);
         Title=findViewById(R.id.Title);
         Note=findViewById(R.id.Notes);
-        Pass=findViewById(R.id.password);
 
         Pass.setTextColor(Color.BLACK);
         Note.setTextColor(Color.BLACK);
         Title.setTextColor(Color.BLACK);
         Acc.setTextColor(Color.BLACK);
         Username.setTextColor(Color.BLACK);
+        Button save = findViewById(R.id.save);
 
-        Button save=findViewById(R.id.save);
 
         save.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String pass = Pass.getText().toString();
-                String note = Note.getText().toString();
-                String title = Title.getText().toString();
-                String acc = Acc.getText().toString();
-                String username = Username.getText().toString();
+                    @Override
+                    public void onClick(View v) {
 
-                SharedPreferences preferences = getSharedPreferences("MyPref", Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = preferences.edit();
-                editor.putString("title", title);
-                editor.putString("note", note);
-                editor.putString("password", pass);
-                editor.putString("acc", acc);
-                editor.putString("user", username);
+                        String Tit = Title.getText().toString();
+                        String Pas = Pass.getText().toString();
+                        Intent resultIntent = new Intent();
+                        resultIntent.putExtra("description", "Title:"+Tit +"\n"+"Password:"+Pas);
+                        setResult(RESULT_OK, resultIntent);
+                        finish();
+                        int duration = Toast.LENGTH_SHORT;
 
+                        Toast toast = Toast.makeText(EnterDetails.this, display, duration);
+                        toast.show();
 
+                    }
+                });
 
+                }
 
-                editor.apply();
-                Toast.makeText(EnterDetails.this,"Saved!",Toast.LENGTH_LONG).show();
-                openCreateAccount();
+            public void returnBack(View view) {
+                finish();
             }
-        });
-
-
-
-
-
-
-
-
-    }
-    public void openCreateAccount(){
-        Intent intent = new Intent(this, CreateAccount.class );
-        startActivity(intent);
-    }
-}
-
-        /* @Override
-        public void onBackPressed() {
-            // Navigate to MainActivity when the back button is pressed
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
-            finish();
-        }*/
-
-
+        }
 
