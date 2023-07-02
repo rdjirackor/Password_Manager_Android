@@ -8,6 +8,7 @@ import android.graphics.PorterDuff;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -136,9 +137,27 @@ public class CreateAccount extends AppCompatActivity {
 
             }
 
+    private boolean doubleBackToExitPressedOnce = false;
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            finishAffinity(); //Will close all activities and exit the app
+            return;
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Press again to exit the app", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+            public void run() {
+                doubleBackToExitPressedOnce = false;
+            }
+        }, 2000); //The delay time in  milliseconds.
+
+    }
 
 
-        @Override
+
+    @Override
         protected void onActivityResult(int requestCode, int resultCode, Intent data) {
             super.onActivityResult(requestCode, resultCode, data);
             if (requestCode == REQUEST_CODE_ADD_TODO && resultCode == RESULT_OK) {
@@ -199,9 +218,6 @@ public class CreateAccount extends AppCompatActivity {
                         toast.show();
                     }
                 }}
-
-
-
 
 
     public void openEnterDetActivity() {
