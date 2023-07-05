@@ -8,4 +8,9 @@
     </string>
     <string name="Welcome">"Welcome, dude"</string>
     <string name="EnterMaster">Enter Master Password</string>
+    <string-array name="SpinnerItems">
+        <item>Change Master Password</item>
+        <item>Clear all saved Passwords</item>
+        <item>Dark/Light</item>
+    </string-array>
 </resources>
