@@ -225,4 +225,7 @@ public class CreateAccount extends AppCompatActivity {
         Intent intent = new Intent(this, EnterDetails.class);
         startActivityForResult(intent, REQUEST_CODE_ADD_TODO);
     }
+    public void openEditMasPassActivity() {
+        Intent intent = new Intent(this,EditMasterPassword.class);
+        startActivity(intent);
 }
