@@ -37,6 +37,7 @@ public class CreateAccount extends AppCompatActivity {
             preferences = getSharedPreferences("Passwords", Context.MODE_PRIVATE);
             editor = preferences.edit();
             Drawable drawable = getResources().getDrawable(R.drawable.for_most_important_textviews);
+            
 
 
 
@@ -211,7 +212,7 @@ public class CreateAccount extends AppCompatActivity {
                       }
 
                       else {
-                        CharSequence text = "My Limit's exceeded!!!";
+                        CharSequence text = "My Limit has been exceeded!!!";
                         int duration = Toast.LENGTH_SHORT;
 
                         Toast toast = Toast.makeText(this, text, duration);
