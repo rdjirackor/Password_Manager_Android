@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 public class EditMasterPassword extends AppCompatActivity {
@@ -19,6 +20,7 @@ public class EditMasterPassword extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(!changer.getText().toString().equals("")){
                 String newPassword =changer.getText().toString();
 
                 // Retrieve the password
@@ -28,6 +30,10 @@ public class EditMasterPassword extends AppCompatActivity {
                 editor.apply();
                 openCreateAccount();
                 finish();
+            }
+            else{
+                    Toast.makeText(EditMasterPassword.this, "Enter a new Master Password", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

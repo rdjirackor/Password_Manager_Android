@@ -10,8 +10,11 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,7 +25,7 @@ import java.util.List;
 
 // CreateAccount.java
 
-public class CreateAccount extends AppCompatActivity {
+public class CreateAccount extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     private static final int REQUEST_CODE_ADD_TODO = 1;
     private TextView tx1,tx2,tx3,tx4,tx5,tx6,tx7,tx8,tx9;
@@ -37,13 +40,9 @@ public class CreateAccount extends AppCompatActivity {
             preferences = getSharedPreferences("Passwords", Context.MODE_PRIVATE);
             editor = preferences.edit();
             Drawable drawable = getResources().getDrawable(R.drawable.for_most_important_textviews);
-            Button move=findViewById(R.id.moveToEditScreen);
-            move.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    openEditMasPassActivity();
-                }
-            });
+            Spinner spinner = findViewById(R.id.spinner1);
+
+
 
             
 
@@ -134,6 +133,7 @@ public class CreateAccount extends AppCompatActivity {
                 tx9.setText(nineText);
                 tx9.setBackground(drawable);
             }
+            spinner.setBackgroundColor(Color.BLUE);
 
             Button b=findViewById(R.id.cn);
             b.setOnClickListener(new View.OnClickListener(){
@@ -142,9 +142,45 @@ public class CreateAccount extends AppCompatActivity {
                     openEnterDetActivity();
                 }
             });
+            ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                    R.array.SpinnerItems, android.R.layout.simple_spinner_item);
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            spinner.setAdapter(adapter);
+            spinner.setOnItemSelectedListener(this);
+        }
 
 
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        String selectedItem = parent.getItemAtPosition(position).toString();
+
+        if (position != 0) {
+            // Perform actions based on the selected item
+            if (selectedItem.equals("Change Master Password")) {
+                openEditMasPassActivity();
+            } else if (selectedItem.equals("Settings")) {
+                Toast.makeText(this, "Adey Come", Toast.LENGTH_SHORT).show();
+            } else if (selectedItem.equals("Exit")) {
+                finishAffinity();
             }
+
+            // Reset the spinner selection to the prompt item
+            parent.setSelection(0);
+        }
+    }
+
+
+
+
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
+
+}
+
+
+
 
     private boolean doubleBackToExitPressedOnce = false;
     public void onBackPressed() {
