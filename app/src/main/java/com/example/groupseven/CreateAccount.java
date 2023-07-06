@@ -159,7 +159,7 @@ public class CreateAccount extends AppCompatActivity implements AdapterView.OnIt
             if (selectedItem.equals("Change Master Password")) {
                 openEditMasPassActivity();
             } else if (selectedItem.equals("Settings")) {
-                Toast.makeText(this, "Adey Come", Toast.LENGTH_SHORT).show();
+                openSettings();
             } else if (selectedItem.equals("Exit")) {
                 finishAffinity();
             }
@@ -272,4 +272,9 @@ public class CreateAccount extends AppCompatActivity implements AdapterView.OnIt
     public void openEditMasPassActivity() {
         Intent intent = new Intent(this,EditMasterPassword.class);
         startActivity(intent);
-}}
+}
+    public void openSettings() {
+        Intent intent = new Intent(this,Settings.class);
+        startActivity(intent);
+    }
+}
