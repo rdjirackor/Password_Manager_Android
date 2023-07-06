@@ -28,6 +28,7 @@
         <activity android:name=".MasterScreenCreation"/>
         <activity android:name=".LoginCreate" />
         <activity android:name=".EditMasterPassword"/>
+        <activity android:name=".Settings"/>
 
 
     </application>
