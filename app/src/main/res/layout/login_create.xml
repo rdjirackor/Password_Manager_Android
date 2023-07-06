@@ -14,7 +14,7 @@
         android:layout_height="54dp"
         android:layout_margin="2dp"
         android:gravity="center"
-        android:text="Welcome back"
+        android:text="Welcome back!"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +36,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welmessage"
-        app:layout_constraintVertical_bias="0.241" />
+        app:layout_constraintVertical_bias="0.240" />
 
     <Button
         android:id="@+id/loginbut"
@@ -45,9 +45,9 @@
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintHorizontal_bias="0.915"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logpass"
-        app:layout_constraintVertical_bias="0.175" />
+        app:layout_constraintVertical_bias="0.176" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
