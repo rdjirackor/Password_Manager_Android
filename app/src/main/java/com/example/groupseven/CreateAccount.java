@@ -37,6 +37,14 @@ public class CreateAccount extends AppCompatActivity {
             preferences = getSharedPreferences("Passwords", Context.MODE_PRIVATE);
             editor = preferences.edit();
             Drawable drawable = getResources().getDrawable(R.drawable.for_most_important_textviews);
+            Button move=findViewById(R.id.moveToEditScreen);
+            move.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    openEditMasPassActivity();
+                }
+            });
+
             
 
 
@@ -228,4 +236,4 @@ public class CreateAccount extends AppCompatActivity {
     public void openEditMasPassActivity() {
         Intent intent = new Intent(this,EditMasterPassword.class);
         startActivity(intent);
-}
+}}
