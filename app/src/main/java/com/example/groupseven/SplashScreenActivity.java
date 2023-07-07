@@ -23,6 +23,10 @@ public class SplashScreenActivity extends AppCompatActivity {
         });
         videoView.start();
     }
+    private void openMainActivity() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 
     
 }
