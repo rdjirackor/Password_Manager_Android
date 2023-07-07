@@ -31,11 +31,6 @@ public class EditMasterPassword extends AppCompatActivity {
                 openCreateAccount();
                 finish();
             }
-            else{
-                    Toast.makeText(EditMasterPassword.this, "Enter a new Master Password", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
     }
     public void openCreateAccount(){
         Intent intent = new Intent(this, CreateAccount.class);
