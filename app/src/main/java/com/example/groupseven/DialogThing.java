@@ -19,8 +19,11 @@ public class DialogThing extends DialogFragment {
                 })
                 .setNegativeButton("Wait.. what, No!", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        // Perform the action when "No" is clicked
+                        Toast.makeText(getActivity(), "Danger Averted!", Toast.LENGTH_SHORT).show();
+                        getActivity().finish();
+
                     }
+
                 });
         return builder.create();
     }
