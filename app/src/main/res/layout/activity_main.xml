@@ -5,21 +5,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/passman_bg"
     tools:context=".MainActivity">
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:text="@string/whoMadeMe"
-        android:textStyle="italic"
-        android:textSize="18sp"
-        android:gravity="center"
         android:layout_margin="2dp"
+        android:gravity="center"
+        android:text="@string/whoMadeMe"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.369" android:id="@+id/textView"/>
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568" />
+
     <Button
         android:text="Continue"
         android:layout_width="wrap_content"

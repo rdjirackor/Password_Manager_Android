@@ -4,7 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -30,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         textView.setTextColor(Color.BLACK);
         textView.setTypeface(null, Typeface.BOLD);
 
-
         //This button below, will on being pressed move to th next pge which is the createAccount page (which doesn't technically create accounts, but I
         //misnamed it and stuck with that cuz im lazy, lol
 
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     openCreateActivity();
                 }
-                }
+            }
         });
     }
 
