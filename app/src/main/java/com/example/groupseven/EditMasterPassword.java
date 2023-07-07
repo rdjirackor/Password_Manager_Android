@@ -20,18 +20,19 @@ public class EditMasterPassword extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!changer.getText().toString().equals("")){
-                String newPassword =changer.getText().toString();
+                if(!changer.getText().toString().equals("")) {
+                    String newPassword = changer.getText().toString();
 
-                // Retrieve the password
-                SharedPreferences preferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = preferences.edit();
-                editor.putString("password", newPassword);
-                editor.apply();
-                openCreateAccount();
-                finish();
+                    // Retrieve the password
+                    SharedPreferences preferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = preferences.edit();
+                    editor.putString("password", newPassword);
+                    editor.apply();
+                    openCreateAccount();
+                    finish();
+                } }});
+
             }
-    }
     public void openCreateAccount(){
         Intent intent = new Intent(this, CreateAccount.class);
         startActivity(intent);
