@@ -18,24 +18,25 @@ public class EditMasterPassword extends AppCompatActivity {
         Button save=findViewById(R.id.theSave);
 
         save.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(!changer.getText().toString().equals("")){
-                String newPassword =changer.getText().toString();
+                    @Override
+                    public void onClick(View v) {
 
-                // Retrieve the password
-                SharedPreferences preferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = preferences.edit();
-                editor.putString("password", newPassword);
-                editor.apply();
-                openCreateAccount();
-                finish();
-            }
-            else{
-                    Toast.makeText(EditMasterPassword.this, "Enter a new Master Password", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+                        String Tit = Title.getText().toString();
+                        String Pas = Pass.getText().toString();
+                        String Acco = Acc.getText().toString();
+                        String Usernamo = Username.getText().toString();
+
+                        Intent resultIntent = new Intent();
+                        resultIntent.putExtra("description", "Title:"+Tit +"\n"+"Password:"+Pas+"\n"+"Account:"+Acco+"\n"+"Password:"+Pas+"\n"+"Username:"+Usernamo);
+                        setResult(RESULT_OK, resultIntent);
+                        finish();
+                        int duration = Toast.LENGTH_SHORT;
+
+                        Toast toast = Toast.makeText(EnterDetails.this, display, duration);
+                        toast.show();
+
+                    }
+                });
     }
     public void openCreateAccount(){
         Intent intent = new Intent(this, CreateAccount.class);
