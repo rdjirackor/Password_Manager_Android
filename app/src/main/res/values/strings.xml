@@ -9,7 +9,6 @@
     <string name="Welcome">"Welcome, dude"</string>
     <string name="EnterMaster">Enter Master Password</string>
     <string-array name="SpinnerItems">
-        <item>Select an item</item>
         <item>Change Master Password</item>
         <item>Settings</item>
         <item>Exit</item>

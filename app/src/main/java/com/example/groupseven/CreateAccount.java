@@ -133,7 +133,7 @@ public class CreateAccount extends AppCompatActivity implements AdapterView.OnIt
                 tx9.setText(nineText);
                 tx9.setBackground(drawable);
             }
-            spinner.setBackgroundColor(Color.BLUE);
+//            removed spinner color here
 
             Button b=findViewById(R.id.cn);
             b.setOnClickListener(new View.OnClickListener(){
