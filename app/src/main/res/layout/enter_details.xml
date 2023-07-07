@@ -10,85 +10,83 @@
 
 
     <EditText
+        android:id="@+id/password"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="Password"
-        android:textColorHint="@color/black"
         android:background="@drawable/back"
         android:ems="10"
-        android:id="@+id/password"
-        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.423" app:layout_constraintVertical_bias="0.474"
-        android:minHeight="48dp"/>
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
 
     <EditText
-        android:id="@+id/Notes"
+        android:id="@+id/Username"
         android:layout_width="300dp"
-        android:layout_height="153dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/back"
         android:ems="10"
-        android:hint="Notes (Optional)"
+        android:hint="Username"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.423"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702" />
+        app:layout_constraintVertical_bias="0.499" />
+
     <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="Username"
-        android:ems="10"
-        android:textColorHint="@color/black"
-        android:background="@drawable/back"
-        android:id="@+id/Username"
-        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.423" app:layout_constraintVertical_bias="0.335"
-        android:minHeight="48dp"/>
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="Account For"
-        android:background="@drawable/back"
-        android:ems="10"
-        android:textColorHint="@color/black"
-        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/account"
-        app:layout_constraintHorizontal_bias="0.423" app:layout_constraintVertical_bias="0.187"
-        android:minHeight="48dp"/>
-    <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
         android:background="@drawable/back"
-        android:textColorHint="@color/black"
-        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-        android:hint="Title"
         android:ems="10"
+        android:hint="Account For"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.288" />
+
+    <EditText
         android:id="@+id/Title"
-        app:layout_constraintHorizontal_bias="0.423" app:layout_constraintVertical_bias="0.048"
-        android:minHeight="48dp"/>
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
 
     <Button
         android:id="@+id/save"
         android:layout_width="103dp"
         android:layout_height="56dp"
-        android:layout_marginTop="16dp"
         android:background="@drawable/background"
         android:text="Save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintHorizontal_bias="0.795"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Notes"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.273" />
 </androidx.constraintlayout.widget.ConstraintLayout>

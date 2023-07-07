@@ -15,22 +15,20 @@ import android.widget.Toast;
 // EnterDetails.java
 
 public class EnterDetails extends AppCompatActivity {
-    // ...
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.enter_details);
-        EditText Pass,Note,Title,Acc,Username;
+        EditText Pass,Title,Acc,Username;
         String display="Added!";
         Pass = findViewById(R.id.password);
         Username=findViewById(R.id.Username);
         Acc=findViewById(R.id.account);
         Title=findViewById(R.id.Title);
-        Note=findViewById(R.id.Notes);
 
         Pass.setTextColor(Color.BLACK);
-        Note.setTextColor(Color.BLACK);
         Title.setTextColor(Color.BLACK);
         Acc.setTextColor(Color.BLACK);
         Username.setTextColor(Color.BLACK);
@@ -43,8 +41,11 @@ public class EnterDetails extends AppCompatActivity {
 
                         String Tit = Title.getText().toString();
                         String Pas = Pass.getText().toString();
+                        String Acco = Acc.getText().toString();
+                        String Usernamo = Username.getText().toString();
+
                         Intent resultIntent = new Intent();
-                        resultIntent.putExtra("description", "Title:"+Tit +"\n"+"Password:"+Pas);
+                        resultIntent.putExtra("description", "Title:"+Tit +"\n"+"Password:"+Pas+"\n"+"Account:"+Acco+"\n"+"Password:"+Pas+"\n"+"Username:"+Usernamo);
                         setResult(RESULT_OK, resultIntent);
                         finish();
                         int duration = Toast.LENGTH_SHORT;
