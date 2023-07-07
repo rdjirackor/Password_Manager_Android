@@ -36,6 +36,6 @@ public class EditMasterPassword extends AppCompatActivity {
     public void openCreateAccount(){
         Intent intent = new Intent(this, CreateAccount.class);
         startActivity(intent);
-    }
+    }}
     
 
