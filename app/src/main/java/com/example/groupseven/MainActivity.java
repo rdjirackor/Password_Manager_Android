@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView textView = findViewById(R.id.textView);
-        textView.setTextColor(Color.BLACK);
-        textView.setTypeface(null, Typeface.BOLD);
+//        TextView textView = findViewById(R.id.textView);
+//        textView.setTextColor(Color.BLACK);
+//        textView.setTypeface(null, Typeface.BOLD);
 
         //This button below, will on being pressed move to th next pge which is the createAccount page (which doesn't technically create accounts, but I
         //misnamed it and stuck with that cuz im lazy, lol
