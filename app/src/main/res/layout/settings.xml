@@ -57,7 +57,7 @@
         android:layout_height="40dp"
         android:layout_margin="5dp"
         android:background="@drawable/back"
-        android:text="Switch between dark and light theme"
+        android:text="Are you enjoying the app? "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
@@ -85,12 +85,11 @@
         android:id="@+id/toggleLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dark/Light"
+        android:text="Yes/No"
         app:layout_constraintBaseline_toBaselineOf="@id/toggle"
         app:layout_constraintEnd_toStartOf="@id/toggle"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent" />
-
     <androidx.appcompat.widget.AppCompatToggleButton
         android:id="@+id/toggle"
         android:layout_width="wrap_content"
