@@ -38,22 +38,19 @@ public class EnterDetails extends AppCompatActivity {
 
 
         save.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
+            @Override
+            public void onClick(View v) {
+                if(!changer.getText().toString().equals("")){
+                String newPassword =changer.getText().toString();
 
-                        String Tit = Title.getText().toString();
-                        String Pas = Pass.getText().toString();
-                        Intent resultIntent = new Intent();
-                        resultIntent.putExtra("description", "Title:"+Tit +"\n"+"Password:"+Pas);
-                        setResult(RESULT_OK, resultIntent);
-                        finish();
-                        int duration = Toast.LENGTH_SHORT;
-
-                        Toast toast = Toast.makeText(EnterDetails.this, display, duration);
-                        toast.show();
-
-                    }
-                });
+                // Retrieve the password
+                SharedPreferences preferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString("password", newPassword);
+                editor.apply();
+                openCreateAccount();
+                finish();
+            }
 
                 }
 
