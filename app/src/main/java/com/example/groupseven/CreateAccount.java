@@ -237,7 +237,7 @@ public class CreateAccount extends AppCompatActivity implements AdapterView.OnIt
                           tx6.setText(desc);
                           editor.putString("tx6", desc);
                           editor.apply();
-                          tx5.setBackground(getDrawable(R.drawable.for_most_important_textviews));
+                          tx6.setBackground(getDrawable(R.drawable.for_most_important_textviews));
                       }else if (tx7.getText().toString().isEmpty()) {
                           tx7.setText(desc);
                           editor.putString("tx7", desc);
