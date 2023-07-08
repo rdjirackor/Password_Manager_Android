@@ -2,24 +2,24 @@
 **This repository contains the code for the Password Manager app developed by Team 7.
 **Team Members
 **
-1. Richard Djirackor (Leader)
-2. Adzedowa Courage  (GitHub name: Brainy Yawson)
-3. Azariah Waadie
-4. Aboagye Emmanuel
-5. Daniel Junior
-6. Rebecca Sando Lamisi
-7. Tutu John
-8. Emmanuel Asante
-9. Fiifi Koomson
-10. Abdul Majeed Amina
+1. Richard Djirackor (Leader)   (GitHub name: Richard Djirackor) 
+2. Adzedowa Courage (GitHub name: BrainyYawson)
+3. Azariah Waadie (GitHub name: waadieazaria)
+4. Aboagye Emmanuel (GitHub name: AboagyeEmma)
+5. Daniel Junior (GitHub name: 10970871)
+6. Rebecca Sando Lamisi (GitHub name: rebeccasando)
+7. Tutu John Mawufemor Yao (GitHub name: tutujohn)
+8. Emmanuel Asante  (GitHub name: Asante77)
+9. Fiifi Koomson (GitHub name: mrKoomson)
+10. Abdul Majeed Amina  (GitHub name:Aminatest)
 Assigned Roles
 - User Interface Design:
   - John
-  - Courage
   - Daniel
   - Richard
   - Emmanuel Asante
 - Logic Manipulator:
+  - Courage
   - Amina
   - Richard
   - Emmanuel Aboagye
