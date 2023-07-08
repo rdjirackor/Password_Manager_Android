@@ -1,8 +1,8 @@
-Team 7 - Password Manager App
-This repository contains the code for the Password Manager app developed by Team 7.
-Youtube Video at : https://youtu.be/uqnZmYxG_vY
+#Team 7 - Password Manager App
+##This repository contains the code for the Password Manager app developed by Team 7.
+##Youtube Video at : https://youtu.be/uqnZmYxG_vY
 ***************************************************************************
-Team Members
+###Team Members
 1. Richard Djirackor (Leader)   (GitHub name: rdjirackor) - 10965604
 2. Adzedowa Courage (GitHub name: BrainyYawson) - 10962382
 3. Azariah Waadie (GitHub name: waadieazaria) -
@@ -31,7 +31,7 @@ Assigned Roles
 
 
    
-Documentation
+#Documentation
 This application serves as a Password Manager. It allows users to securely store their passwords and associated details such as usernames and email addresses for future use.
 
 Installation Instructions
