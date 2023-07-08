@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
-    private static final String VIDEO_PATH = "android.resource://com.example.groupseven/" + R.raw.splash;
+    private static final String VIDEO_PATH = "android.resource://com.example.groupseven/" + R.raw.team_7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
