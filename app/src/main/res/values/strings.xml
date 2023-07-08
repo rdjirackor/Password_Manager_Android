@@ -7,6 +7,13 @@
     </string>
     <string name="Welcome">"Welcome, dude"</string>
     <string name="EnterMaster">Enter Master Password</string>
+    <string name="about_stuff">Team 7 - Password Manager App \n
+Richard Djirackor (Captain)\n
+Adzedowa Courage (Second Captain)\n \nThis application serves as a Password Manager. It allows users to securely store their passwords and associated details such as usernames and email addresses for future use.\n
+    Initially this was merely a project work, but now , I will focus on building more revolutionary apps in the future\n
+   \nSo watch this repository "github.com/rdjirackor", as more is certain to come, God willingly!
+
+    </string>
     <string-array name="SpinnerItems">
         <item>Menu 🔽</item>
         <item>Change Master Password</item>

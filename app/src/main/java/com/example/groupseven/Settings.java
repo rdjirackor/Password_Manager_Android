@@ -82,6 +82,12 @@ public class Settings extends AppCompatActivity {
                 }
             }
         });
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAboutPage();
+            }
+        });
     }
     public void openCreateAccount(){
         Intent intent=new Intent(this,CreateAccount.class);
@@ -98,6 +104,10 @@ public class Settings extends AppCompatActivity {
         // Set background color to white for all pages
         ViewGroup rootView = findViewById(android.R.id.content);
         rootView.setBackgroundColor(Color.WHITE);
+    }
+    private void openAboutPage(){
+        Intent intent1=new Intent(this, About.class);
+        startActivity(intent1);
     }
 }
 
