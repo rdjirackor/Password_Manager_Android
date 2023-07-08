@@ -2,6 +2,7 @@ package com.example.groupseven;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,8 @@ public class EditMasterPassword extends AppCompatActivity {
         EditText changer=findViewById(R.id.reseter);
         Button save=findViewById(R.id.theSave);
         ImageButton back2 = findViewById(R.id.backer2);
+        back2.setBackgroundColor(Color.TRANSPARENT);
+
 
 
 

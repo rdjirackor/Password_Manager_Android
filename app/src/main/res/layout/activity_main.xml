@@ -42,7 +42,7 @@
         android:layout_marginTop="112dp"
         android:padding="5dp"
         android:textAlignment="center"
-        android:text="'Passwords are like hidden treasures:\nhide em' from prying eyes,\nand share only em' with homies'.\n - Chris Valentine"
+        android:text="'Passwords are like hidden treasures:\nhide em' from prying eyes,\nand only share em' with homies'.\n - Chris Valentine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

@@ -30,6 +30,9 @@ public class EnterDetails extends AppCompatActivity {
         Title=findViewById(R.id.Title);
         ImageButton back1 = findViewById(R.id.backer1);
 
+        back1.setBackgroundColor(Color.TRANSPARENT);
+
+
         Pass.setTextColor(Color.BLACK);
         Title.setTextColor(Color.BLACK);
         Acc.setTextColor(Color.BLACK);
