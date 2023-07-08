@@ -9,6 +9,18 @@
     tools:context=".EnterDetails">
 
 
+    <ImageButton
+        android:id="@+id/backer1"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_back_button"
+        app:layout_constraintBottom_toTopOf="@+id/Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275" />
+
     <EditText
         android:id="@+id/password"
         android:layout_width="300dp"
@@ -21,10 +33,10 @@
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintHorizontal_bias="0.423"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.682" />
+        app:layout_constraintVertical_bias="0.556" />
 
     <EditText
         android:id="@+id/Username"
@@ -38,10 +50,10 @@
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.414" />
 
     <EditText
         android:id="@+id/account"
@@ -75,7 +87,7 @@
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.099" />
+        app:layout_constraintVertical_bias="0.158" />
 
     <Button
         android:id="@+id/save"

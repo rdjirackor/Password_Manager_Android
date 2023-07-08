@@ -7,19 +7,35 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".EditMasterPassword">
+
+    <ImageButton
+        android:id="@+id/backer2"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_back_button"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533" />
+
     <TextView
-        android:text="Change your Master Pass!"
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:padding="10dp"
+        android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:textSize="20dp"
-        android:textColor="@color/black"
         android:gravity="center"
-        android:layout_height="wrap_content" android:id="@+id/textView2"
+        android:padding="10dp"
+        android:text="Change your Master Pass!"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintVertical_bias="0.062"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
 
     <EditText
         android:id="@+id/reseter"

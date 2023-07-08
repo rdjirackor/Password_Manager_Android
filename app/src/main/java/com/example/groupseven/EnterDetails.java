@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 // EnterDetails.java
@@ -27,12 +28,22 @@ public class EnterDetails extends AppCompatActivity {
         Username=findViewById(R.id.Username);
         Acc=findViewById(R.id.account);
         Title=findViewById(R.id.Title);
+        ImageButton back1 = findViewById(R.id.backer1);
 
         Pass.setTextColor(Color.BLACK);
         Title.setTextColor(Color.BLACK);
         Acc.setTextColor(Color.BLACK);
         Username.setTextColor(Color.BLACK);
         Button save = findViewById(R.id.save);
+
+
+        back1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCreateAccount();
+                finish();
+            }
+        });
 
 
         save.setOnClickListener(new View.OnClickListener() {
@@ -58,7 +69,13 @@ public class EnterDetails extends AppCompatActivity {
 
                 }
 
-            public void returnBack(View view) {
+
+    public void openCreateAccount(){
+        Intent intent=new Intent(this,CreateAccount.class);
+        startActivity(intent);
+    }
+
+    public void returnBack(View view) {
                 finish();
             }
         }

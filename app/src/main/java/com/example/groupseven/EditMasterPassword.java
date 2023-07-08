@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +17,17 @@ public class EditMasterPassword extends AppCompatActivity {
         setContentView(R.layout.edit_maspass);
         EditText changer=findViewById(R.id.reseter);
         Button save=findViewById(R.id.theSave);
+        ImageButton back2 = findViewById(R.id.backer2);
+
+
+
+        back2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCreateAccount();
+                finish();
+            }
+        });
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
