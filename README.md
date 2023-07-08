@@ -3,7 +3,7 @@
 **Team Members
 **
 1. Richard Djirackor (Leader)
-2. Adzedowa Courage
+2. Adzedowa Courage  (GitHub name: Brainy Yawson)
 3. Azariah Waadie
 4. Aboagye Emmanuel
 5. Daniel Junior
