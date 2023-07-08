@@ -1,8 +1,9 @@
-**Team 7 - Password Manager App
-**This repository contains the code for the Password Manager app developed by Team 7.
-**Team Members
-**
-1. Richard Djirackor (Leader)   (GitHub name: Richard Djirackor) - 10965604
+Team 7 - Password Manager App
+This repository contains the code for the Password Manager app developed by Team 7.
+Youtube Video at : https://youtu.be/uqnZmYxG_vY
+***************************************************************************
+Team Members
+1. Richard Djirackor (Leader)   (GitHub name: rdjirackor) - 10965604
 2. Adzedowa Courage (GitHub name: BrainyYawson) - 10962382
 3. Azariah Waadie (GitHub name: waadieazaria) -
 4. Aboagye Emmanuel (GitHub name: AboagyeEmma) - 10942773
@@ -19,6 +20,7 @@ Assigned Roles
   - Daniel
   - Richard
   - Emmanuel Asante
+  - Courage
 - Logic Manipulator:
   - Courage
   - Amina
