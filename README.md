@@ -8,7 +8,7 @@
 4. Aboagye Emmanuel (GitHub name: AboagyeEmma)
 5. Daniel Junior (GitHub name: 10970871)
 6. Rebecca Sando Lamisi (GitHub name: rebeccasando)
-7. Tutu John   (GitHub name: tutujohn)
+7. Tutu John Mawufemor Yao (GitHub name: tutujohn)
 8. Emmanuel Asante  (GitHub name: Asante77)
 9. Fiifi Koomson (GitHub name: mrKoomson)
 10. Abdul Majeed Amina  (GitHub name:Aminatest)
