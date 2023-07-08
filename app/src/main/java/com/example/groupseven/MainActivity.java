@@ -21,6 +21,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        TextView t1,t2;
+        t1=findViewById(R.id.textView);
+        t2=findViewById(R.id.textView4);
+
+        t1.setTextColor(Color.BLACK);
+        t1.setTypeface(Typeface.defaultFromStyle(Typeface.ITALIC));
+        t1.setTextSize(19);
+
+        t2.setTextColor(Color.BLACK);
+        t2.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
+        t2.setTextSize(17);
 
 
         Button createAccount = findViewById(R.id.Continue);
