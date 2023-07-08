@@ -28,7 +28,7 @@ public class LoginCreate extends AppCompatActivity {
         password.setTypeface(null,Typeface.BOLD);
         password.setTextColor(Color.BLACK);
 
-        Button loginBut=findViewById(R.id.loginbut);
+        Button loginBut=findViewById(R.id.loginbutton);
         SharedPreferences preferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
 
         // Retrieve the password
