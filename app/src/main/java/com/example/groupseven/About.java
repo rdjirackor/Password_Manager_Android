@@ -5,13 +5,11 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.w3c.dom.Text;
 
 public class About extends AppCompatActivity {
     @Override
@@ -36,9 +34,15 @@ public class About extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                openCreateAccount();
                 finish();
             }
         });
+    }
+
+    public void openCreateAccount(){
+        Intent inte=new Intent(this,CreateAccount.class);
+        startActivity(inte);
     }
 }
 
