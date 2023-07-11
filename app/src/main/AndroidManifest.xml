@@ -34,8 +34,7 @@
         <activity android:name=".LoginCreate" />
         <activity android:name=".EditMasterPassword"/>
         <activity android:name=".Settings"/>
-        <activity android:name=".About"
-            android:noHistory="true"/>
+        <activity android:name=".About"/>
 
 
     </application>
