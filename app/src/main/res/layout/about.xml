@@ -16,40 +16,33 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.275" />
+        app:layout_constraintVertical_bias="0.275"
+        android:onClick="returnBack"
+        />
 
-    <ScrollView
-        android:id="@+id/scrollVie"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
 
-    <LinearLayout
-        android:id="@+id/displayLay"
+    <TextView
+        android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="About Page"
-            android:textAlignment="center"
-            />
+        android:text="About Page"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/det"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739" />
 
-
-        <TextView
-            android:id="@+id/det"
-            android:paddingTop="50dp"
-            android:layout_width="325dp"
-            android:layout_height="556dp"
-            android:textAlignment="center"
-            android:text="@string/about_stuff" />
-
-
-        </LinearLayout>
-    </ScrollView>
+    <TextView
+        android:id="@+id/det"
+        android:layout_width="325dp"
+        android:layout_height="556dp"
+        android:paddingTop="50dp"
+        android:text="@string/about_stuff"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
