@@ -2,6 +2,7 @@ package com.example.groupseven;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -21,9 +22,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        AirPlaneModeReceiver Al=new AirPlaneModeReceiver();
         TextView t1,t2;
         t1=findViewById(R.id.textView);
         t2=findViewById(R.id.textView4);
+        registerReceiver(Al, new IntentFilter(Intent.ACTION_AIRPLANE_MODE_CHANGED));
+
+
 
         t1.setTextColor(Color.BLACK);
         t1.setTypeface(Typeface.defaultFromStyle(Typeface.ITALIC));
@@ -50,6 +55,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+    public void  broadcastIntent(View view){
+        Intent intent=new Intent();
+        intent.setAction(Intent.ACTION_AIRPLANE_MODE_CHANGED);
+        sendBroadcast(intent);
     }
 
     public void openCreateActivity(){
