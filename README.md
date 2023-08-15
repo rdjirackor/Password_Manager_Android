@@ -1,39 +1,11 @@
-# Team 7 - Password Manager App
+# Password Manager App
 ## This repository contains the code for the Password Manager app developed by Team 7.
 ## Youtube Video at : https://youtu.be/uqnZmYxG_vY
 ***************************************************************************
 ### Team Members
-1. Richard Djirackor (Leader)   (GitHub name: rdjirackor) - 10965604
-2. Adzedowa Courage (GitHub name: BrainyYawson) - 10962382
-3. Azariah Waadie (GitHub name: waadieazaria) -
-4. Aboagye Emmanuel (GitHub name: AboagyeEmma) - 10942773
-5. Adjei Daniel Junior (GitHub name: 10970871) - 10970871
-6. Rebecca Sando Lamisi (GitHub name: rebeccasando) - 10948151
-7. Tutu John Mawufemor Yao (GitHub name: tutujohn) - 10978644
-8. Emmanuel Asante  (GitHub name: Asante77) - 10960991
-9. Fiifi Koomson (GitHub name: mrKoomson) -
-10. Abdul Majeed Amina  (GitHub name: Aminatest) - 10965487
-    
-Assigned Roles
-- User Interface Design:
-  - John
-  - Daniel
-  - Richard
-  - Emmanuel Asante
-  - Courage
-- Logic Manipulator:
-  - Courage
-  - Amina
-  - Richard
-  - Emmanuel Aboagye
-  - Waadie
-- Quality Assurance:  - Rebecca
-
+1. Richard Djirackor (Leader)   (GitHub name: rdjirackor)    
   
-
-
-   
-#Documentation
+# Documentation
 This application serves as a Password Manager. It allows users to securely store their passwords and associated details such as usernames and email addresses for future use.
 
 Installation Instructions
@@ -71,10 +43,6 @@ To set up the development environment, follow these steps:
 
 Testing
 The Password Manager app has gone thorough testing to ensure its reliability and stability
-# Team 7 - Password Manager App
-
-This repository contains the code for the Password Manager app developed by Team 7.
-
 
 Use Story
 
@@ -83,30 +51,6 @@ This application serves as a Password Manager. It will allow users to securely s
 When the app is opened for the first time, the user is prompted to create a master password. This master password is required to access the app in subsequent uses. If the master password is ever lost, the user will lose access to the stored passwords. This measure ensures the integrity and security of the saved passwords, preventing unauthorized access to the app.
 
 Once the user successfully accessed the app, all previously saved passwords are displayed. The user also has the option to delete all passwords in the settings section by confirming the deletion in a dialog box. Additionally, the user can change the master password using the provided option in the spinner section.
-
-Features
-The Password Manager app demonstrates the use of various concepts taught in class, including:
-
-1. Intents
-2. Spinner
-3. Values Directory (e.g., string resource file, colors, styles, etc.)
-4. TextView
-5. EditText
-6. Button
-7. ImageView
-8. ImageButton
-9. Back button
-10. Event listeners
-11. Toast messages
-12. Permissions
-13. SharedPreferences
-14. Background color
-15. Toggle Button
-16. Dialog, etc.
-
- Extras
-The app also includes a splash screen feature.
-
 
 Known Issues or Limitations
 While we have made efforts to create a robust app, there are a few known issues or limitations:
